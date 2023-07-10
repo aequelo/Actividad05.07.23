@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+}
+.navTop{
+    background-color: rgba(128, 128, 128, 0.521);
+    display: flex;
+    justify-content: space-between;
+}
+.navTop_list{
+    width: 12%;
+}
+.navTop_items{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navTop_items a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.navMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.logoimg{
+    position: absolute;
+
+}
+.navMenu_list a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navMenu_items{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: -18%;
+}
+/* main */
+.banner{
+    display: block;
+    text-align: center;
+    background-image: url(../multimedia/img/banner-actividad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.banner_content{
+    padding: 10.6%;
+}
+.banner h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-shadow: 2px 3px 3px black;
+}
+.banner p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    text-shadow: 0px 2px 2px black;
+}
+.bannerbtn{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: burlywood;
+    text-shadow: 1px 2px 2px black;
+    box-shadow: 4px 5px 40px black;
+
+}
+/*galeria*/
+.galeria{ 
+    text-align: center;
+}
+.galeriaCont{
+    padding: 50px 100px 360px 250px;
+    gap: 20px;
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+.box1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 346%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.103);
+    background-image: url(../multimedia/img/aloe.jpg);
+    background-position-y: 140%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.box1_btn{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: burlywood;
+    text-shadow: 1px 2px 2px black;
+    box-shadow: 4px 5px 5px black;
+    width: 50px;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 10px;
+}
+.box1 h3{
+    margin-left: 10px;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.box1 p{
+    margin-left: 10px;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+.box2{
+    background-image: url(../multimedia/img/3macetas.webp);
+    grid-column: 2 / 3; 
+    grid-row: 1 / 3;
+    height: 200%;
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.144);
+    background-position-x: 5%;
+    background-position-y: 115%;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    padding-right: 50px;
+}
+.box3{
+    margin-left: -150px;
+    background-image: url(../multimedia/img/aloeventana.webp);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    height: 750%;
+    width: 60%;
+    padding: 49px 0px 0px 50px;
+    background-position: 30%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+}
+.box4{
+    position: relative;
+    grid-column: 2 / 4;
+    margin-top: 22%;
+    height: 126%;
+    width: 71%;
+    background-image: url(../multimedia/img/terrario00.jpg);
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box4 h3{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.box4 h3:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 100%;
+    width: 100%;
+}
+/*carrusel*/
+.productos{
+    position: relative;
+
+}
+.productos h1{
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    
+}
+.carrusel{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.13);
+}
+
+.carrusel_elemento{
+    flex: 1 0 auto;
+    margin: 100px 150px;
+    border: 1px solid white;
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.178);
+}
+.carrusel_elemento img{
+    width: 200px;
+    height: 170px;
+}
+.carrusel_elemento a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: gold;
+    text-shadow: 0px 2px 2px black;
+}
